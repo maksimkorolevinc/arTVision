@@ -672,16 +672,17 @@ h1{
 
 /* Example random dark images for demonstration */
 .service-bg-1 {
-    background-image: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80');
+    /* background-image: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80'); */
+    background-image: url("assets/photos/20240314_174551.jpg");
 }
 .service-bg-2 {
-    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');
+    background-image: url('assets/photos/dubbin.jpg');
 }
 .service-bg-3 {
-    background-image: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80');
+    background-image: url('assets/photos/masterckass.jpg');
 }
 .service-bg-main {
-    background-image: url('https://downloader.disk.yandex.ru/preview/ee71da3c3d182a4b82808fc410c6c1103e1106eee9668ad89a0d0782774dcc04/68eaf609/_RiXbRMn2dfpVt2upMbVdhT4sTVjGJO0TXgZZ1I_l2ntB1X2UDwvXa6i5TSlb6JsIHtz_MqYU1mjJzE1i_4aVQ%3D%3D?uid=0&filename=IMG_4252.heic&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v3&size=2048x2048');
+    background-image: url('assets/photos/multicam3.jpg');
     opacity: 0.25; /* even lighter for the main card */
 }
 .service-card-content {
