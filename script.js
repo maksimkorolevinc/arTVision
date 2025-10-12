@@ -15,7 +15,24 @@ navLinks.forEach((link, index) => {
         link.classList.add('active');
     });
 });
+// ...existing code...
 
+// Smooth scroll for all anchor links with hashes
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href').slice(1);
+        const target = document.getElementById(targetId);
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// ...existing code...
 slider.addEventListener('scroll', () => {
     const currentSlide = Math.round(slider.scrollLeft / slider.offsetWidth);
     navLinks.forEach((nav, index) => {
