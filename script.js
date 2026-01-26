@@ -138,9 +138,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    addAnimation();
-}
+// Partner logo scroller animation - call directly since script is at end of body
+addAnimation();
 
 function addAnimation() {
     scrollers.forEach(scroller => {
