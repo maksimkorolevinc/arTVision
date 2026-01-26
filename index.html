@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<link href="https://fonts.googleapis.com/css2?family=Neucha&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <title>arTVision</title>
-    
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neucha&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <meta name="description"
+        content="arTVision group - команда профессионалов в области телевизионных и кино трансляций театральных и концертных событий. Уникальные технологии съёмки и постпродакшн.">
+    <meta name="keywords"
+        content="телевизионные трансляции, киносъемка, театральные трансляции, концертные съемки, многокамерная съемка, arTVision group">
+    <meta property="og:title" content="arTVision group | Профессиональные ТВ и кино трансляции">
+    <meta property="og:description"
+        content="Независимое творческое объединение лучших российских специалистов в области телевизионных и кино трансляций.">
+    <meta property="og:type" content="website">
+    <title>arTVision group | Профессиональные ТВ и кино трансляции</title>
 </head>
-<!-- lol zhopa -->
-<body>
-    
 
-    <nav class="header">
-        <div class="links">
-            <a href="#main">Главная</a>
-            <a href="#2">Наши услуги</a>
-            <a href="#3">Портфолио</a>
-            <a href="#team">Команда</a>
-            <a href="#6">Наши партнеры</a>
-            <a href="#7">Контакты</a>
+<body>
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">arTVision group</a>
+            <div class="links">
+                <a href="#hero">Главная</a>
+                <a href="#services">Наши услуги</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#team">Команда</a>
+                <a href="#partners">Наши партнеры</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Открыть меню">
+                <i class='bx bx-menu'></i>
+            </button>
         </div>
-        <a href="#" class="logo">arTVision group</a>
     </nav>
-    <section id="1" class="main">
+
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <button class="mobile-menu-close"><i class='bx bx-x'></i></button>
+            <div class="mobile-links">
+                <a href="#hero">Главная</a>
+                <a href="#services">Наши услуги</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#team">Команда</a>
+                <a href="#partners">Наши партнеры</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
+    </div>
+    <section id="hero" class="main">
         <section class="container">
             <div class="slider-wrapper">
                 <div class="slider">
-                    <img id="slide-1" src="assets/photos/IMG_0699.jpeg" alt="">
-                    <img id="slide-2" src="assets/photos/IMG_4257.jpeg" alt="">
-                    <img id="slide-3" src="assets/photos/IMG_5867.jpeg" alt="">
+                    <img id="slide-1" src="assets/photos/IMG_0699.jpeg" alt="Трансляция театрального события">
+                    <img id="slide-2" src="assets/photos/IMG_4257.jpeg" alt="Работа операторской группы">
+                    <img id="slide-3" src="assets/photos/IMG_5867.jpeg" alt="Процесс видеопроизводства">
                 </div>
                 <div class="slider-nav">
                     <a href="#slide-1"></a>
@@ -43,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <div id="main" class="container">
+        <div id="about" class="container">
             <div class="description">
                 <div class="info">
                     <h1>Это ART vision
@@ -51,194 +79,240 @@
                     </h1>
                     <p>
                         Независимое творческое объединение artVision group - опытная и
-                    высокопрофессиональная команда, объединившая лучших российских специалистов в
-                    области телевизионных и кино трансляций театральных и концертных событий. Наша
-                    творческая бригада владеет уникальными для российского пространства технологиями
-                    съёмки и постпродакшн, что делает нашу продукцию конкурентоспособной на мировом
-                    рынке. В том или ином составе сотрудники нашей команды имели опыт работы с такими
-                    ведущими европейскими производителями в данной индустрии, как - BelAir Media
-                    (Франция) , Telmondis (Франция) - EuroArts (Германия), Unitel (Германия), Accentus
-                    Music (Германия), RAI (Италия). Наши сотрудники проходили стажировку в составе
-                    съемочных групп ВВС (Великобритания).
+                        высокопрофессиональная команда, объединившая лучших российских специалистов в
+                        области телевизионных и кино трансляций театральных и концертных событий. Наша
+                        творческая бригада владеет уникальными для российского пространства технологиями
+                        съёмки и постпродакшн, что делает нашу продукцию конкурентоспособной на мировом
+                        рынке. В том или ином составе сотрудники нашей команды имели опыт работы с такими
+                        ведущими европейскими производителями в данной индустрии, как - BelAir Media
+                        (Франция) , Telmondis (Франция) - EuroArts (Германия), Unitel (Германия), Accentus
+                        Music (Германия), RAI (Италия). Наши сотрудники проходили стажировку в составе
+                        съемочных групп ВВС (Великобритания).
                     </p>
                     <p>
                         Весь накопленный опыт сотрудничества с мировыми компаниями и платформами мы
-стараемся применить в нашем аудиовизуальном культурном пространстве. Все наши
-сотрудники имеют большой опыт в создании телеверсий концертов; балетных, оперных и
-драматических спектаклей; конкурсных и фестивальных церемоний и других мероприятий
-в сфере культуры для российских и зарубежных телеканалов.
+                        стараемся применить в нашем аудиовизуальном культурном пространстве. Все наши
+                        сотрудники имеют большой опыт в создании телеверсий концертов; балетных, оперных и
+                        драматических спектаклей; конкурсных и фестивальных церемоний и других мероприятий
+                        в сфере культуры для российских и зарубежных телеканалов.
 
                     </p>
                     <p>
                         artVision group владеет уникальными для российского аудиовидеопроизводства
-технологиями съёмки и постпродакшн, что делает нашу продукцию высококачественной и
-конкурентоспособной по мировым критериям, что охотно признают и все наши партнёры.
-Среди международных платформ – это ARTE, mediciTV, Mezzo, на отечественном поле
-такие медиа пректы, как TheatrHD и «Золотая Маска» on line.
+                        технологиями съёмки и постпродакшн, что делает нашу продукцию высококачественной и
+                        конкурентоспособной по мировым критериям, что охотно признают и все наши партнёры.
+                        Среди международных платформ – это ARTE, mediciTV, Mezzo, на отечественном поле
+                        такие медиа пректы, как TheatrHD и «Золотая Маска» on line.
                     </p>
                     <p>
                         Наша команда способна решить любую художественную задачу. Результатом станет не
-просто видеозапись концерта, а авторское произведение, созданное в соответствии с
-замыслом композитора или драматурга, с оригинальными режиссерскими решениями и
-безукоризненной операторской работой.
+                        просто видеозапись концерта, а авторское произведение, созданное в соответствии с
+                        замыслом композитора или драматурга, с оригинальными режиссерскими решениями и
+                        безукоризненной операторской работой.
                     </p>
-                     </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="2" class="container services-section">
+    <section id="services" class="container services-section">
     </section>
-<h2 class="section-title">НАШИ УСЛУГИ</h2>
-<div class="services-outer">
-    <div class="services-cards-row services-cards-row--column">
-        <a href="#multicam" class="service-card service-card--main">
-            <div class="service-card-bg service-bg-main"></div>
-            <div class="service-card-content">
-                <h3>Многокамерные телевизионные съемки и прямые трансляции</h3>
+    <h2 class="section-title">НАШИ УСЛУГИ</h2>
+    <div class="services-outer">
+        <div class="services-cards-row services-cards-row--column">
+            <a href="#multicam" class="service-card service-card--main">
+                <div class="service-card-bg service-bg-main"></div>
+                <div class="service-card-content">
+                    <h3>Многокамерные телевизионные съемки и прямые трансляции</h3>
+                </div>
+            </a>
+            <div class="services-cards-row">
+                <a href="#production" class="service-card">
+                    <div class="service-card-bg service-bg-1"></div>
+                    <div class="service-card-content">
+                        <h4>Производство рекламных трейлеров, видео презентаций, документальных фильмов</h4>
+                    </div>
+                </a>
+                <a href="#sound" class="service-card">
+                    <div class="service-card-bg service-bg-2"></div>
+                    <div class="service-card-content">
+                        <h4>Субтитрирование и озвучивание</h4>
+                    </div>
+                </a>
+                <a href="#masterclass" class="service-card">
+                    <div class="service-card-bg service-bg-3"></div>
+                    <div class="service-card-content">
+                        <h3>Мастер классы</h3>
+                    </div>
+                </a>
             </div>
-        </a>
-        <div class="services-cards-row">
-            <a href="#production" class="service-card">
-                <div class="service-card-bg service-bg-1"></div>
-                <div class="service-card-content">
-                    <h4>Производство рекламных трейлеров, видео презентаций, документальных фильмов</h4>
-                </div>
-            </a>
-            <a href="#sound" class="service-card">
-                <div class="service-card-bg service-bg-2"></div>
-                <div class="service-card-content">
-                    <h4>Субтитрирование и озвучивание</h4>
-                </div>
-            </a>
-            <a href="#masterclass" class="service-card">
-                <div class="service-card-bg service-bg-3"></div>
-                <div class="service-card-content">
-                    <h3>Мастер классы</h3>
-                </div>
-            </a>
         </div>
-    </div>
 
-</div>
-<section id="multicam" class="multicam-section">
-    <h2 class="section-title">Многокамерный съемки</h2>
-    <div class="multicam-content">
-        <div class="multicam-grid">
-            <div class="multicam-text">
-                <p>
-                    Многокамерная телевизионная съёмка с помощью мобильного телевизионного комплекса или в студии – это вершина телевизионного искусства, самая сложная и трудоёмкая область, результат коллективного творчества самых разных специалистов, которых мы объединяем в единую команду, работающую на достижение одной цели!
-                </p>
-                <p>
-                    Мы гордимся тем, что владеем уникальными для России творческими технологиями съёмки, что выводит нашу продукцию на высочайший мировой уровень, независимо – прямой ли это эфир или показ после постпродакшн.
-                </p>
-                <p>
-                    Мы создаем кино- и телеверсии драматических и театральных спектаклей, концертов классической, джазовой и популярной музыки, проводим прямые трансляции международных музыкальных конкурсов.
-                </p>
-                <p>
-                    Нас рекомендуют профессионалы, работающие в театральном и концертном бизнесе.
-                </p>
-            </div>
-            <div class="multicam-photos">
-                <img src="assets/photos/mulicam1.JPG" alt="Многокамерная съемка 1" class="multicam-photo multicam-photo--first">
-                <img src="assets/photos/multicam3.jpg" alt="Многокамерная съемка 2" class="multicam-photo multicam-photo--second">
-                <img src="assets/photos/multicam4.jpeg" alt="Многокамерная съемка 3" class="multicam-photo multicam-photo--third">
+    </div>
+    <section id="multicam" class="multicam-section">
+        <h2 class="section-title">Многокамерный съемки</h2>
+        <div class="multicam-content">
+            <div class="multicam-grid">
+                <div class="multicam-text">
+                    <p>
+                        Многокамерная телевизионная съёмка с помощью мобильного телевизионного комплекса или в студии –
+                        это вершина телевизионного искусства, самая сложная и трудоёмкая область, результат
+                        коллективного творчества самых разных специалистов, которых мы объединяем в единую команду,
+                        работающую на достижение одной цели!
+                    </p>
+                    <p>
+                        Мы гордимся тем, что владеем уникальными для России творческими технологиями съёмки, что выводит
+                        нашу продукцию на высочайший мировой уровень, независимо – прямой ли это эфир или показ после
+                        постпродакшн.
+                    </p>
+                    <p>
+                        Мы создаем кино- и телеверсии драматических и театральных спектаклей, концертов классической,
+                        джазовой и популярной музыки, проводим прямые трансляции международных музыкальных конкурсов.
+                    </p>
+                    <p>
+                        Нас рекомендуют профессионалы, работающие в театральном и концертном бизнесе.
+                    </p>
+                </div>
+                <div class="multicam-photos">
+                    <img src="assets/photos/mulicam1.JPG" alt="Многокамерная съемка 1"
+                        class="multicam-photo multicam-photo--first" loading="lazy">
+                    <img src="assets/photos/multicam3.jpg" alt="Многокамерная съемка 2"
+                        class="multicam-photo multicam-photo--second" loading="lazy">
+                    <img src="assets/photos/multicam4.jpeg" alt="Многокамерная съемка 3"
+                        class="multicam-photo multicam-photo--third" loading="lazy">
+                </div>
             </div>
         </div>
-    </div>
-</section>
-        <!-- ...existing code... -->
+    </section>
+    <!-- ...existing code... -->
     <section id="production" class="production-section">
         <h2 class="section-title">Производство рекламных трейлеров, видео презентаций, документальных фильмов</h2>
         <div class="production-content">
             <div class="production-image">
-                <img src="assets/photos/production.jpg" alt="Производство рекламных трейлеров">
+                <img src="assets/photos/production.jpg" alt="Производство рекламных трейлеров" loading="lazy">
             </div>
             <div class="production-text">
                 <p>
-                    Наша компания предлагает полный набор услуг по созданию рекламного видеопакета к премьере спектакля, концерта или мультимедийного проекта для размещения на интернет-платформах, в мобильных приложениях, для показов на телевидении или в кинотеатрах.
+                    Наша компания предлагает полный набор услуг по созданию рекламного видеопакета к премьере спектакля,
+                    концерта или мультимедийного проекта для размещения на интернет-платформах, в мобильных приложениях,
+                    для показов на телевидении или в кинотеатрах.
                 </p>
                 <p>
-                    Мы пишем сценарный план, создаем режиссерскую экспликацию, формируем раскадровку, осуществляем съёмки, монтаж, озвучивания … На каждом этапе с нами работают только проверенные и зарекомендовавшие себя на самом высоком профессиональном уровне специалисты. 
+                    Мы пишем сценарный план, создаем режиссерскую экспликацию, формируем раскадровку, осуществляем
+                    съёмки, монтаж, озвучивания … На каждом этапе с нами работают только проверенные и зарекомендовавшие
+                    себя на самом высоком профессиональном уровне специалисты.
                 </p>
                 <p>
-                    Также у нас большой опыт в создании тематических видео презентаций культурных проектов, фильмов-портретов, документальных фильмов.
+                    Также у нас большой опыт в создании тематических видео презентаций культурных проектов,
+                    фильмов-портретов, документальных фильмов.
                 </p>
                 <p>
-                    Сотрудничество в команде единомышленников всегда даёт высочайший результат, как в творческом, так и в техническом воплощении.
+                    Сотрудничество в команде единомышленников всегда даёт высочайший результат, как в творческом, так и
+                    в техническом воплощении.
                 </p>
             </div>
         </div>
     </section>
-        <!-- ...existing code... -->
+    <!-- ...existing code... -->
     <section id="sound" class="sound-section">
         <h2 class="section-title">Субтитрирование и озвучивание</h2>
         <div class="sound-content">
             <div class="sound-text">
                 <p>
-                    Озвучивание зарубежной телепродукции – сложный процесс, требующий совместных усилий многих специалистов – переводчиков, редакторов, актёров и режиссёров, звукорежиссёров и инженеров. Мы сотрудничаем с великолепными переводчиками, но для достижения высокого результата перевод должен быть не только эквиритмичным, но и соответствовать всем тонкостям оригинала, для чего необходимо привлекать специалистов в теме того или иного фильма. Мы всегда учитываем в своей работе технические требования, предъявляемые к готовой видеопродукции на каждом конкретном телеканале, интернет-платформе или в сети кинопроката, для которых предназначена наша работа.
+                    Озвучивание зарубежной телепродукции – сложный процесс, требующий совместных усилий многих
+                    специалистов – переводчиков, редакторов, актёров и режиссёров, звукорежиссёров и инженеров. Мы
+                    сотрудничаем с великолепными переводчиками, но для достижения высокого результата перевод должен
+                    быть не только эквиритмичным, но и соответствовать всем тонкостям оригинала, для чего необходимо
+                    привлекать специалистов в теме того или иного фильма. Мы всегда учитываем в своей работе технические
+                    требования, предъявляемые к готовой видеопродукции на каждом конкретном телеканале,
+                    интернет-платформе или в сети кинопроката, для которых предназначена наша работа.
                 </p>
                 <p>
-                    Субтитрирование – ещё один вид адаптации зарубежной телепродукции к русскоязычному эфиру. Оно необходимо в случаях, когда важно не помешать восприятию оригинальной звуковой дорожки, которая представляет иногда главную ценность оригинального фильма. Конечно, отдельной строкой выделим работу с операми, музыкальными фильмами или спектаклями. Здесь очень важно найти не только хорошего переводчика, но и грамотного редактора, без которых данную работу выполнить невозможно.
+                    Субтитрирование – ещё один вид адаптации зарубежной телепродукции к русскоязычному эфиру. Оно
+                    необходимо в случаях, когда важно не помешать восприятию оригинальной звуковой дорожки, которая
+                    представляет иногда главную ценность оригинального фильма. Конечно, отдельной строкой выделим работу
+                    с операми, музыкальными фильмами или спектаклями. Здесь очень важно найти не только хорошего
+                    переводчика, но и грамотного редактора, без которых данную работу выполнить невозможно.
                 </p>
             </div>
             <div class="sound-image">
-                <img src="assets/photos/dubbin.jpg" alt="Озвучивание и субтитрирование">
+                <img src="assets/photos/dubbin.jpg" alt="Озвучивание и субтитрирование" loading="lazy">
             </div>
         </div>
     </section>
-    
+
     <section id="masterclass" class="masterclass-section">
         <h2 class="section-title">Мастер-классы</h2>
         <div class="masterclass-content">
             <div class="masterclass-image">
-                <img src="assets/photos/masterckass.jpg" alt="Мастер-классы">
+                <img src="assets/photos/masterckass.jpg" alt="Мастер-классы" loading="lazy">
             </div>
             <div class="masterclass-text">
                 <p>
-                    Начиная с 2022 года наша команда ведет активную «тренерскую» работу. Мы проводим мастер классы в региональных концертных и театральных организациях, осуществляя совместно со специалистами на местах прямые трансляции или записи культурных событий. Этот опыт просто бесценен для регионов, а для нас является в очередной раз доказательством, что работать хорошо можно даже в самых экстремальных технических ситуациях, при условии наличия профессиональных и неравнодушных к своей работе людей.
+                    Начиная с 2022 года наша команда ведет активную «тренерскую» работу. Мы проводим мастер классы в
+                    региональных концертных и театральных организациях, осуществляя совместно со специалистами на местах
+                    прямые трансляции или записи культурных событий. Этот опыт просто бесценен для регионов, а для нас
+                    является в очередной раз доказательством, что работать хорошо можно даже в самых экстремальных
+                    технических ситуациях, при условии наличия профессиональных и неравнодушных к своей работе людей.
                 </p>
                 <p>
-                    Мы готовы приехать в любую точку России и провести работу с вашей начинающей или уже опытной командой, чтобы расширить горизонты ваших возможностей, поставить новые задачи и повысить профессиональный уровень вашей работы.
+                    Мы готовы приехать в любую точку России и провести работу с вашей начинающей или уже опытной
+                    командой, чтобы расширить горизонты ваших возможностей, поставить новые задачи и повысить
+                    профессиональный уровень вашей работы.
                 </p>
             </div>
         </div>
     </section>
     <!-- ...existing code... -->
     <!-- ...existing code... -->
-         <!-- ...existing code... -->
+    <!-- ...existing code... -->
     <section id="team" class="team-section">
         <h2 class="section-title">НАША КОМАНДА</h2>
         <div class="team-parts">
             <div class="team-part">
                 <div class="team-photo">
-                    <img src="assets/photos/team-direct.jpg" alt="Режиссерская бригада">
+                    <img src="assets/photos/team-direct.jpg" alt="Режиссерская бригада" loading="lazy">
                 </div>
                 <div class="team-info">
                     <h3>Режиссерская бригада</h3>
                     <p>
-                        Съемка каждого спектакля или концерта требует тщательной подготовки, которая начинается задолго до самого события и может занимать несколько недель. Команда режиссера, готовящего съемку, может включать в свой состав до четырех человек – это диктуется не только многоплановостью самого спектакля и его жанровыми особенностями, но и многозадачностью при осуществлении прямой трансляции или создании киноверсии события. Поэтому в связке с режиссером обязательно работает скрипт, ассистент и (чаще всего в хореографических постановках) музыкальный консультант.
+                        Съемка каждого спектакля или концерта требует тщательной подготовки, которая начинается задолго
+                        до самого события и может занимать несколько недель. Команда режиссера, готовящего съемку, может
+                        включать в свой состав до четырех человек – это диктуется не только многоплановостью самого
+                        спектакля и его жанровыми особенностями, но и многозадачностью при осуществлении прямой
+                        трансляции или создании киноверсии события. Поэтому в связке с режиссером обязательно работает
+                        скрипт, ассистент и (чаще всего в хореографических постановках) музыкальный консультант.
                     </p>
                 </div>
             </div>
             <div class="team-part">
                 <div class="team-photo">
-                    <img src="assets/photos/team-operator.jpeg" alt="Операторы">
+                    <img src="assets/photos/team-operator.jpeg" alt="Операторы" loading="lazy">
                 </div>
                 <div class="team-info">
                     <h3>Операторы</h3>
                     <p>
-                        Операторы – это 90% успеха проекта. В нашей команде – выпускники ведущих российских вызов, включая, в первую очередь, ВГИК и РГИСИ. Благодаря их высочайшему профессионализму и творческому подходу, на экране воплощаются все задуманные идеи режиссерской команды. И немаловажно понимать ведущую роль оператора-постановщика, в ответственность которого входит также качество изображения, его цветовая насыщенность, сбалансированность и кадрирование.
+                        Операторы – это 90% успеха проекта. В нашей команде – выпускники ведущих российских вызов,
+                        включая, в первую очередь, ВГИК и РГИСИ. Благодаря их высочайшему профессионализму и творческому
+                        подходу, на экране воплощаются все задуманные идеи режиссерской команды. И немаловажно понимать
+                        ведущую роль оператора-постановщика, в ответственность которого входит также качество
+                        изображения, его цветовая насыщенность, сбалансированность и кадрирование.
                     </p>
                 </div>
             </div>
             <div class="team-part">
                 <div class="team-photo">
-                    <img src="assets/photos/team-sound.jpeg" alt="Звукорежиссеры">
+                    <img src="assets/photos/team-sound.jpeg" alt="Звукорежиссеры" loading="lazy">
                 </div>
                 <div class="team-info">
                     <h3>Звукорежиссеры</h3>
                     <p>
-                        Качество звукозаписи является одним из основных критериев оценки уровня аудиовизуальной продукции. Звукорежиссеры, работающие в нашей команде, мастерски справляются с задачами, которые ставят как сложнейшие симфонические партитуры, оперные и драматические спектакли, так и масштабные проекты на открытом воздухе и спортивных аренах. Умение сводить десятки каналов в единую звуковую картину, учитывая все нюансы спектакля или концерта, сохраняя все его детали, как в прямом эфире, так и в пост мастеринге – это настоящее искусство, владение которым мы высоко ценим в наших коллегах по звуковому цеху.
+                        Качество звукозаписи является одним из основных критериев оценки уровня аудиовизуальной
+                        продукции. Звукорежиссеры, работающие в нашей команде, мастерски справляются с задачами, которые
+                        ставят как сложнейшие симфонические партитуры, оперные и драматические спектакли, так и
+                        масштабные проекты на открытом воздухе и спортивных аренах. Умение сводить десятки каналов в
+                        единую звуковую картину, учитывая все нюансы спектакля или концерта, сохраняя все его детали,
+                        как в прямом эфире, так и в пост мастеринге – это настоящее искусство, владение которым мы
+                        высоко ценим в наших коллегах по звуковому цеху.
                     </p>
                 </div>
             </div>
@@ -268,86 +342,134 @@
             </div>
         </div>
     </section> -->
-    
-    <section class="container" id="3">
+
+    <section class="container" id="portfolio">
         <h1>ПОРТФОЛИО</h1>
-        <div class="portfolio" >
+        <div class="portfolio">
             <div class="video-item">
-                <video src="assets/videos/Trailer 2.mp4" controls></video>
-                <h3 class="video-title">УралОпераБалет  L.A.D.</h3>
-              </div>
-              <div class="video-item">
-                <video src="assets/videos/VID_1.mp4" controls></video>
-                <h3 class="video-title">Теодор Курентзис. musicAeterna</h3>
-              </div>
-              <div class="video-item">
-                <video src="assets/videos/VID_2.mp4" controls></video>
-                <h3 class="video-title">Конкурс Хиблы Герзмава. Гала-концерт лауреатов</h3>
-              </div>
-              <div class="video-item">
-                <video src="assets/videos/VID_3.mp4" controls></video>
-                <h3 class="video-title">OPERALIA Пласидо Доминго 2021 Финал</h3>
-              </div>
-              <div class="video-item">
-                <video src="assets/videos/VID_4.mp4" controls></video>
-                <h3 class="video-title">МХТ.  Э. Ростан "Сирано де Бержерак"</h3>
-              </div>
-              <div class="video-item">
-                <video src="assets/videos/VID_5.mp4" controls></video>
-                <h3 class="video-title">УралОпераБалет С. Прокофьев "Ромео и Джульетта"</h3>
-              </div>
-              <div class="video-item">
-                <video src="assets/videos/VID_6.mp4" controls></video>
-                <h3 class="video-title">МАМТ им. Станиславского и Немировича-Данченко   А.Экман "Тюль"</h3>
-              </div>
-              <div class="video-item">
-                <video src="assets/videos/VID_7.mp4" controls></video>
-                <h3 class="video-title">Элементарно Хадсон - Промо</h3>
-              </div>
-              <div class="video-item">
-                <video src="assets/videos/VID_8.mp4" controls></video>
-                <h3 class="video-title">Ничего не бойся</h3>
-              </div>
-              <div class="video-item">
-                <video src="assets/videos/VID_10.mp4" controls></video>
-                <h3 class="video-title">Балет LAD Trailer 2</h3>
-              </div>
-              <div class="video-item">
-                <video src="assets/videos/VID_11.mp4" controls></video>
-                <h3 class="video-title">NNB Привет</h3>
-              </div>
+                <video src="assets/videos/Trailer 2.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">УралОпераБалет L.A.D.</h3>
+                    <p class="video-desc">Презентационный ролик масштабного балетного проекта на музыку Леонида
+                        Десятникова.</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <video src="assets/videos/VID_1.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">Теодор Курентзис. musicAeterna</h3>
+                    <p class="video-desc">Съемка репетиционного процесса и интервью с одним из самых ярких дирижеров
+                        современности.</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <video src="assets/videos/VID_2.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">Конкурс Хиблы Герзмава</h3>
+                    <p class="video-desc">ТВ-версия гала-концерта лауреатов международного конкурса вокалистов и
+                        концертмейстеров.</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <video src="assets/videos/VID_3.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">OPERALIA Пласидо Доминго 2021</h3>
+                    <p class="video-desc">Прямая трансляция финала самого престижного оперного конкурса планеты.</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <video src="assets/videos/VID_4.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">МХТ. "Сирано де Бержерак"</h3>
+                    <p class="video-desc">Киноверсия спектакля по пьесе Эдмона Ростана в постановке Егора Перегудова.
+                    </p>
+                </div>
+            </div>
+            <div class="video-item">
+                <video src="assets/videos/VID_5.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">УралОпераБалет "Ромео и Джульетта"</h3>
+                    <p class="video-desc">Телеверсия постановки Вячеслава Самодурова на музыку С. Прокофьева.</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <video src="assets/videos/VID_6.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">А. Экман "Тюль"</h3>
+                    <p class="video-desc">Съемка авангардного балета в Музыкальном театре им. К.С. Станиславского и
+                        Вл.И. Немировича-Данченко.</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <video src="assets/videos/VID_7.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">Элементарно Хадсон - Промо</h3>
+                    <p class="video-desc">Рекламный ролик для театральной премьеры в жанре комедийного детектива.</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <video src="assets/videos/VID_8.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">Ничего не бойся</h3>
+                    <p class="video-desc">Промо-кампания для популярного российского мюзикла по песням группы "Секрет".
+                    </p>
+                </div>
+            </div>
+            <div class="video-item">
+                <video src="assets/videos/VID_10.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">Балет LAD Trailer 2</h3>
+                    <p class="video-desc">Второй рекламный трейлер к мировой премьере проекта L.A.D.</p>
+                </div>
+            </div>
+            <div class="video-item">
+                <video src="assets/videos/VID_11.mp4" controls loading="lazy"></video>
+                <div class="video-content">
+                    <h3 class="video-title">NNB Привет</h3>
+                    <p class="video-desc">Короткий видео-анонс и приветствие от создателей театрального проекта.</p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-controls">
+            <button id="toggle-portfolio" class="premium-btn">
+                <span class="btn-text">Смотреть все работы</span>
+                <i class='bx bx-chevron-down'></i>
+            </button>
         </div>
     </section>
-    <section class="container" id="6">
+    <section class="container" id="partners">
         <h1>НАШИ ПАРТНЕРЫ</h1>
         <div class="scroller">
-             <ul class="tag-list scroller__inner">
-                <img src="assets/partners/p_1.png" alt="">
-                <img src="assets/partners/p_2.png" alt="">
-                <img src="assets/partners/p_3.jpg" alt="">
-                <img src="assets/partners/p_4.jpg" alt="">
-                <img src="https://www.bileter.ru/data/buildings_logos/j/g/_S3cmAuKiDGaPDs5w5qRK5bDyBkzmCp0.jpg" alt="">
-                <img src="https://avatars.dzeninfra.ru/get-zen_doc/5231757/pub_63c7972e81a65249512c7c94_63c7975f5331eb6e483afac6/scale_1200" alt="">
-             </ul>
+            <ul class="tag-list scroller__inner">
+                <img src="assets/partners/p_1.png" alt="Партнер 1" loading="lazy">
+                <img src="assets/partners/p_2.png" alt="Партнер 2" loading="lazy">
+                <img src="assets/partners/p_3.jpg" alt="Партнер 3" loading="lazy">
+                <img src="assets/partners/p_4.jpg" alt="Партнер 4" loading="lazy">
+                <img src="https://www.bileter.ru/data/buildings_logos/j/g/_S3cmAuKiDGaPDs5w5qRK5bDyBkzmCp0.jpg"
+                    alt="Bileter" loading="lazy">
+                <img src="https://avatars.dzeninfra.ru/get-zen_doc/5231757/pub_63c7972e81a65249512c7c94_63c7975f5331eb6e483afac6/scale_1200"
+                    alt="Партнер" loading="lazy">
+            </ul>
         </div>
     </section>
-    <section id="7" class="end">
+    <section id="contacts" class="end">
         <footer class="footer">
             <div class="footer-content">
                 <h1>arTVision</h1>
                 <p>Свяжитесь с нами!</p>
                 <div class="icons">
-                    <a href="#"><i class='bx bxl-telegram' ></i></a>
-                    <a href="#"><i class='bx bxl-vk' ></i></a>
-                    <a href="#"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-telegram'></i></a>
+                    <a href="#"><i class='bx bxl-vk'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
                 </div>
             </div>
-            
+
         </footer>
     </section>
-    
+
     <script src="script.js">
     </script>
 </body>
+
 </html>
