@@ -10,6 +10,11 @@
     overflow-x: hidden;
 }
 
+/* Global paragraph justification */
+p {
+    text-align: justify;
+}
+
 :root {
     --primary: #22223b;
     --secondary: #4a4e69;
@@ -313,6 +318,11 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 40px 80px rgba(0, 0, 0, 0.12);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.description p,
+.info p {
+    text-align: justify;
 }
 
 .description:hover {
@@ -757,40 +767,59 @@ footer {
 
 @media (max-width: 480px) {
     nav .logo {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 800;
     }
 
     .team h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .container h1 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+
+
+    .description {
+        padding: 2.5rem;
+        margin: -3rem 1rem 2rem;
+        font-size: 1rem;
+        border-radius: 1.5rem;
+    }
+
+    .description p,
+    .info p {
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
 
     .member {
         flex-direction: column;
-        /* Р­Р»РµРјРµРЅС‚С‹ СЂР°СЃРїРѕР»Р°РіР°СЋС‚СЃСЏ РІРµСЂС‚РёРєР°Р»СЊРЅРѕ */
         text-align: center;
+        gap: 1.5rem;
     }
 
     .member img {
-        max-width: 400px;
+        max-width: 100%;
         aspect-ratio: 16/9;
     }
 
     .member-about h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .member-about p {
-        font-size: 1.2rem;
-    }
-
-    .member {
-        gap: 2rem;
-    }
-
-    .container h1 {
         font-size: 1rem;
-        font-weight: 700;
+    }
+
+    .video-desc {
+        font-size: 0.85rem;
+    }
+
+    .video-title {
+        font-size: 1rem;
     }
 }
 
@@ -1495,7 +1524,7 @@ footer {
 
     .sound-section,
     .masterclass-section {
-        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+        padding: 1.5rem 1.5rem;
     }
 
     .sound-content,
@@ -1521,7 +1550,7 @@ footer {
 
     .sound-section,
     .masterclass-section {
-        padding: 1rem 0.2rem;
+        padding: 1.5rem 1rem;
         border-radius: 1rem;
     }
 
