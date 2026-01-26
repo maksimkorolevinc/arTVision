@@ -821,6 +821,12 @@ footer {
     .video-title {
         font-size: 1rem;
     }
+
+    /* Multicam and other text sections */
+    .multicam-text p,
+    .info h1 {
+        font-size: 1.1rem;
+    }
 }
 
 .cool {
@@ -1377,7 +1383,7 @@ footer {
 
 @media (max-width: 900px) {
     .production-section {
-        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+        padding: 1.5rem 1.5rem;
     }
 
     .production-content {
@@ -1398,12 +1404,17 @@ footer {
 
 @media (max-width: 650px) {
     .production-section {
-        padding: 1rem 0.2rem;
+        padding: 1.5rem 1rem;
         border-radius: 1rem;
     }
 
     .production-text {
-        font-size: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .production-text p {
+        font-size: 0.95rem;
+        line-height: 1.65;
     }
 
     .production-image img {
@@ -1556,7 +1567,13 @@ footer {
 
     .sound-text,
     .masterclass-text {
-        font-size: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .sound-text p,
+    .masterclass-text p {
+        font-size: 0.95rem;
+        line-height: 1.65;
     }
 
     .sound-image img,
@@ -1725,7 +1742,7 @@ footer {
 
 @media (max-width: 900px) {
     .team-section {
-        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+        padding: 1.5rem 1.5rem;
     }
 
     .team-part {
@@ -1744,23 +1761,34 @@ footer {
     }
 }
 
-@media (max-width: 650px) {
-    .team-section {
-        padding: 1rem 0.2rem;
-        border-radius: 1rem;
-    }
+.team-section {
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+}
 
-    .team-info h3 {
-        font-size: 1.1rem;
-    }
+.team-info h3 {
+    font-size: 1.1rem;
+}
 
-    .team-info p {
-        font-size: 0.98rem;
-    }
+.team-info p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
 
-    .team-photo img {
-        height: 200px;
-    }
+.team-photo img {
+    height: 200px;
+}
+
+/* Mobile container padding for all sections */
+.container {
+    padding: 0 1rem;
+}
+
+.info p,
+.description p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
 }
 
  
