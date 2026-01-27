@@ -486,35 +486,26 @@
                 </div>
                 <div class="contact-form-wrapper">
                     <h2 class="contact-form-title">Свяжитесь с нами</h2>
-                    <form action="https://formsubmit.co/strannogedon@ya.ru" method="POST" class="contact-form"
-                        id="contactForm">
-                        <!-- FormSubmit Configuration -->
-                        <input type="hidden" name="_subject" value="Новое сообщение с сайта arTVision">
-                        <input type="hidden" name="_captcha" value="true">
-                        <input type="hidden" name="_template" value="box">
-
-                        <!-- Honeypot for spam protection -->
-                        <input type="text" name="_honey" style="display:none">
-
+                    <form action="https://formspree.io/f/mqeqnwdn" method="POST" class="contact-form" id="contactForm">
                         <!-- Form Fields -->
                         <div class="form-group">
                             <label for="name">Ваше имя <span class="required">*</span></label>
-                            <input type="text" id="name" name="Имя" placeholder="Введите ваше имя" required>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Ваш email <span class="required">*</span></label>
-                            <input type="email" id="email" name="Email" placeholder="example@mail.ru" required>
+                            <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
                         </div>
 
                         <div class="form-group">
                             <label for="subject">Тема сообщения <span class="required">*</span></label>
-                            <input type="text" id="subject" name="Тема" placeholder="О чем ваше сообщение?" required>
+                            <input type="text" id="subject" name="subject" placeholder="О чем ваше сообщение?" required>
                         </div>
 
                         <div class="form-group">
                             <label for="message">Сообщение <span class="required">*</span></label>
-                            <textarea id="message" name="Сообщение" rows="5"
+                            <textarea id="message" name="message" rows="5"
                                 placeholder="Напишите ваше сообщение здесь..." required></textarea>
                         </div>
 
