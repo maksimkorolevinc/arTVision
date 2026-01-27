@@ -67,7 +67,7 @@
         <div class="hero-content">
             <div class="glass-panel">
                 <h1>ARTVISION <br> <span class="highlight">GROUP</span></h1>
-                <p class="subtitle">Мы создаем кинематографические шедевры из живых выступлений.</p>
+                <p class="subtitle">Cоздаем кино-шедевры из живых выступлений.</p>
 
                 <div class="cta-group">
                     <a href="#portfolio" class="btn btn-primary">Посмотреть Портфолио</a>
@@ -473,18 +473,62 @@
     </section>
     <section id="contacts" class="end">
         <footer class="footer">
-            <div class="footer-content">
-                <h1>arTVision</h1>
-                <p>Создаем визуальное искусство.</p>
-                <div class="icons">
-                    <a href="#" aria-label="Telegram"><i class='bx bxl-telegram'></i></a>
-                    <a href="#" aria-label="VK"><i class='bx bxl-vk'></i></a>
-                    <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                    <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <h1>arTVision</h1>
+                    <p>Создаем визуальное искусство.</p>
+                    <div class="icons">
+                        <a href="#" aria-label="Telegram"><i class='bx bxl-telegram'></i></a>
+                        <a href="#" aria-label="VK"><i class='bx bxl-vk'></i></a>
+                        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                    </div>
                 </div>
-                <div class="copyright">
-                    © <span id="year">2026</span> arTVision group. Все права защищены.
+                <div class="contact-form-wrapper">
+                    <h2 class="contact-form-title">Свяжитесь с нами</h2>
+                    <form action="https://formsubmit.co/strannogedon@ya.ru" method="POST" class="contact-form"
+                        id="contactForm">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="Новое сообщение с сайта arTVision">
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_template" value="box">
+
+                        <!-- Honeypot for spam protection -->
+                        <input type="text" name="_honey" style="display:none">
+
+                        <!-- Form Fields -->
+                        <div class="form-group">
+                            <label for="name">Ваше имя <span class="required">*</span></label>
+                            <input type="text" id="name" name="Имя" placeholder="Введите ваше имя" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Ваш email <span class="required">*</span></label>
+                            <input type="email" id="email" name="Email" placeholder="example@mail.ru" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Тема сообщения <span class="required">*</span></label>
+                            <input type="text" id="subject" name="Тема" placeholder="О чем ваше сообщение?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Сообщение <span class="required">*</span></label>
+                            <textarea id="message" name="Сообщение" rows="5"
+                                placeholder="Напишите ваше сообщение здесь..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Отправить сообщение</span>
+                            <i class='bx bx-send'></i>
+                        </button>
+
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
                 </div>
+            </div>
+            <div class="copyright">
+                © <span id="year">2026</span> arTVision group. Все права защищены.
             </div>
         </footer>
     </section>

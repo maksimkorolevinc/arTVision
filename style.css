@@ -1251,7 +1251,7 @@ footer {
 
 @media (max-width: 900px) {
     .multicam-section {
-        padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     }
 
     .multicam-grid {
@@ -1287,7 +1287,7 @@ footer {
 
 @media (max-width: 650px) {
     .multicam-section {
-        padding: 1rem 0.2rem;
+        padding: 1.5rem 1rem;
         border-radius: 1rem;
     }
 
@@ -1675,6 +1675,35 @@ footer {
         display: block;
         object-fit: cover;
     }
+
+    .team-section {
+        padding: 1.5rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .team-info h3 {
+        font-size: 1.15rem;
+    }
+
+    .team-info p {
+        font-size: 1.02rem;
+        line-height: 1.75;
+    }
+
+    .team-photo img {
+        height: 200px;
+    }
+
+    /* Mobile container padding for all sections */
+    .container {
+        padding: 0 1rem;
+    }
+
+    .info p,
+    .description p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
 }
 
 .team-section {
@@ -1724,6 +1753,7 @@ footer {
 .team-info {
     flex: 1 1 0;
     color: #22223b;
+    padding: 0.5rem 1rem;
 }
 
 .team-info h3 {
@@ -1759,39 +1789,21 @@ footer {
     .team-photo img {
         height: 160px;
     }
+
+    .team-info {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .team-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .team-info p {
+        font-size: 1.05rem;
+        line-height: 1.75;
+    }
 }
 
-.team-section {
-    padding: 1.5rem 1rem;
-    border-radius: 1rem;
-}
-
-.team-info h3 {
-    font-size: 1.1rem;
-}
-
-.team-info p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-.team-photo img {
-    height: 200px;
-}
-
-/* Mobile container padding for all sections */
-.container {
-    padding: 0 1rem;
-}
-
-.info p,
-.description p {
-    font-size: 0.95rem;
-    line-height: 1.65;
-}
-}
-
- 
 
 /* Animations Scroll */
 .fade-in {
