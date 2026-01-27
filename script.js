@@ -159,3 +159,70 @@ const yearSpan = document.getElementById('year');
 if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
 }
+
+// Contact Form Handling
+const contactForm = document.getElementById('contactForm');
+const formMessage = document.getElementById('formMessage');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        // Clear previous messages
+        formMessage.className = 'form-message';
+        formMessage.textContent = '';
+
+        // Get form values
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // Basic validation (HTML5 will handle required fields)
+        if (!name || !email || !subject || !message) {
+            e.preventDefault();
+            formMessage.className = 'form-message error';
+            formMessage.textContent = 'Пожалуйста, заполните все поля.';
+            return false;
+        }
+
+        // Email validation
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            e.preventDefault();
+            formMessage.className = 'form-message error';
+            formMessage.textContent = 'Пожалуйста, введите корректный email адрес.';
+            return false;
+        }
+
+        // Show loading state
+        const submitBtn = contactForm.querySelector('.submit-btn');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const originalText = btnText.textContent;
+        btnText.textContent = 'Отправка...';
+        submitBtn.disabled = true;
+
+        // FormSubmit will handle the actual submission
+        // The form will be submitted to FormSubmit.co
+        // Note: First submission will require email confirmation
+    });
+
+    // Optional: Handle form inputs for better UX
+    const formInputs = contactForm.querySelectorAll('input, textarea');
+    formInputs.forEach(input => {
+        // Clear error on input
+        input.addEventListener('input', function () {
+            if (formMessage.classList.contains('error')) {
+                formMessage.className = 'form-message';
+                formMessage.textContent = '';
+            }
+        });
+
+        // Add animation on focus
+        input.addEventListener('focus', function () {
+            this.parentElement.style.transform = 'translateX(2px)';
+        });
+
+        input.addEventListener('blur', function () {
+            this.parentElement.style.transform = 'translateX(0)';
+        });
+    });
+}
