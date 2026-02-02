@@ -2345,22 +2345,40 @@ html {
     letter-spacing: 2px;
 }
 
-/* Premium Shine Text Animation */
+/* Premium Shine Text Animation with Glow */
 .shine-text {
     position: relative;
     display: inline-block;
     color: #22223b;
     background: linear-gradient(90deg,
             #22223b 0%,
-            #22223b 35%,
+            #22223b 40%,
             #c9ada7 50%,
-            #22223b 65%,
+            #22223b 60%,
             #22223b 100%);
-    background-size: 250% 100%;
+    background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shineSlide 3s ease-in-out infinite;
+    animation: shineSlide 3s linear infinite;
+}
+
+/* Glow effect using pseudo-element */
+.shine-text::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    color: #c9ada7;
+    text-shadow:
+        0 0 10px rgba(201, 173, 167, 0.8),
+        0 0 20px rgba(201, 173, 167, 0.6),
+        0 0 40px rgba(201, 173, 167, 0.4),
+        0 0 60px rgba(201, 173, 167, 0.2);
+    opacity: 0.7;
+    animation: glowPulse 2s ease-in-out infinite;
+    -webkit-text-fill-color: #c9ada7;
 }
 
 .info h1 .shine-text {
@@ -2370,10 +2388,30 @@ html {
 
 @keyframes shineSlide {
     0% {
-        background-position: 100% center;
+        background-position: 200% center;
     }
 
     100% {
-        background-position: -100% center;
+        background-position: -200% center;
+    }
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        opacity: 0.5;
+        text-shadow:
+            0 0 10px rgba(201, 173, 167, 0.6),
+            0 0 20px rgba(201, 173, 167, 0.4),
+            0 0 40px rgba(201, 173, 167, 0.2);
+    }
+
+    50% {
+        opacity: 0.8;
+        text-shadow:
+            0 0 15px rgba(201, 173, 167, 0.9),
+            0 0 30px rgba(201, 173, 167, 0.7),
+            0 0 50px rgba(201, 173, 167, 0.4);
     }
 }
