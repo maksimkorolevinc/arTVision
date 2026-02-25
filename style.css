@@ -2153,6 +2153,19 @@ html {
     text-align: center;
 }
 
+.hero-latin-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.25em;
+    color: var(--accent);
+    opacity: 0.85;
+    text-align: center;
+    margin: -0.5rem 0 1.5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
 /* Glassmorphism Card */
 .glass-panel {
     background: rgba(255, 255, 255, 0.1);
