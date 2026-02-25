@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maksimkorolevinc.github.io/arTVision/sitemap.xml
