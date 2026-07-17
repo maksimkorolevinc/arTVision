@@ -736,14 +736,14 @@ footer {
     gap: 3rem;
     margin-top: 3rem;
     padding: 0 5%;
-    max-height: 1500px;
+    max-height: 2000px;
     /* Initial height for ~2 rows */
     overflow: hidden;
     transition: max-height 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio.expanded {
-    max-height: 5000px;
+    max-height: 7000px;
     /* Large enough for all */
 }
 
